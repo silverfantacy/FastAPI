@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 
 class BlogBase(BaseModel):
@@ -53,3 +53,11 @@ class Token(BaseModel):
 class TokenData(BaseModel):
     email: str | None = None
     scopes: list[str] = []
+
+class message(BaseModel):
+    role: str
+    content: str
+class Chat(BaseModel):
+    messages: List[message] = []
+    model: Optional[str] = "gpt-3.5-turbo"
+    max_tokens: Optional[int] = 256

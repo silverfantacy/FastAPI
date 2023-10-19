@@ -1,9 +1,11 @@
 import os
+from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from jose import jwt, JWTError
 from . import schemas
 
 
+load_dotenv()
 # openssl rand -hex 32
 SECRET_KEY = os.getenv("SECRET_KEY", "")
 ALGORITHM = os.getenv("ALGORITHM", "HS256")

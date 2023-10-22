@@ -5,5 +5,5 @@ sqlalchemy
 passlib[bcrypt]
 python-jose[cryptography]
 python-dotenv
-openai
+openai==1.0.0b2
 pyotp==2.7.0

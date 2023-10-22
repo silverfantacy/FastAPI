@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, status
-from ..repository import otp
+from repository import otp
 from typing import Union
 
 router = APIRouter(

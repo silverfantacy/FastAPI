@@ -1,7 +1,7 @@
 import os
 from fastapi import HTTPException, status
 from openai import OpenAI
-from .. import schemas
+import schemas
 
 
 client = OpenAI(

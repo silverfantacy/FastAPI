@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, status
-from .. import schemas
-from ..repository import openai
+import schemas
+from repository import openai
 
 router = APIRouter(
     prefix="/openai",

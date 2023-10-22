@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from jose import jwt, JWTError
-from . import schemas
+import schemas
 
 
 load_dotenv()

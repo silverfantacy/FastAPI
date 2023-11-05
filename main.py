@@ -17,6 +17,7 @@ origins = [
     "http://127.0.0.1",
     "http://127.0.0.1:8000",
     "https://fast-api.zeabur.app",
+    "https://pocoha.fief.dev",
 ]
 
 app.add_middleware(

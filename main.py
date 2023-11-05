@@ -16,6 +16,7 @@ origins = [
     "http://localhost:8080",
     "http://127.0.0.1",
     "http://127.0.0.1:8000",
+    "https://fast-api.zeabur.app",
 ]
 
 app.add_middleware(

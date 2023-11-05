@@ -7,3 +7,4 @@ python-jose[cryptography]
 python-dotenv
 openai==1.0.0b2
 pyotp==2.7.0
+fief-client[fastapi]

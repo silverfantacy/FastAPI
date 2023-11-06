@@ -41,13 +41,13 @@ async def get_memory_userinfo_cache() -> MemoryUserInfoCache:
 fief_url = os.getenv("FIEF_BASE_URL", "")
 fief_client_id = os.getenv("FIEF_CLIENT_ID", "")
 fief_client_secret = os.getenv("FIEF_clientSecret", "")
-encryption_key = os.getenv("FIEF_encryption_key", "")
+# encryption_key = os.getenv("FIEF_encryption_key", "")
 
 fief = FiefAsync(
     fief_url,
     fief_client_id,
     fief_client_secret,
-    encryption_key=encryption_key,
+    # encryption_key=encryption_key,
 )
 
 SESSION_COOKIE_NAME = "user_session"

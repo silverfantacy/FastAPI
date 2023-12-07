@@ -10,5 +10,5 @@ router = APIRouter(
 
 
 @router.get("/", status_code=status.HTTP_200_OK)
-def main(platform: Union[str, None] = None, user: fief.FiefUserInfo = Depends(fief.auth.current_user())):
+def main(platform: Union[str, None] = None):
     return otp.get(platform)
